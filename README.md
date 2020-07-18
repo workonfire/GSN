@@ -13,6 +13,6 @@ Teraz już możesz!
 
 Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czekasz?!
 
-[ZADZWOŃ TERAZ](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[ZADZWOŃ TERAZ](https://ujeb.se/wziumownica)
 
 ![Zrzut ekranu](https://i.imgur.com/DitCN6E.png)
