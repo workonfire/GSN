@@ -10,7 +10,7 @@ stol
 komornik
 glut
 wombat
-kopsztal
+kupsztal
 balon
 swistak
 robal

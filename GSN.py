@@ -31,7 +31,7 @@ def main():
             max_length = int(input("Maksymalna ilość znaków: "))
             color_print(Fore.RED, "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")
             save_to_file = input("Zapisać wynik do pliku? (y/n) ").lower().rstrip()
-            generate_number = input("Generować losową liczbę? (y/n) ").lower().rstrip()
+            generate_number = input("Doklejać losową liczbę? (y/n) ").lower().rstrip()
             break
         except ValueError:
             color_print(Fore.RED, "Podaj poprawne wartości.")
@@ -50,13 +50,13 @@ def main():
         noun = '_' + noun if choice(['underline', 'capitalize']) == 'underline' else noun.title()
         generated_nick = adjective + noun
         if generate_number == 'y':
-            generated_nick += str(randint(1, 1000))
+            generated_nick += str(randint(1, 100))
         if len(generated_nick) > max_length:
             generated_nick = generated_nick[:max_length]
         generated_nicknames.append(generated_nick)
 
     for nick in generated_nicknames:
-        color_print(Fore.LIGHTCYAN_EX, ">> " + nick)
+        color_print(Fore.LIGHTCYAN_EX, "> " + nick)
 
     color_print(Fore.LIGHTGREEN_EX, "\nGotowe.")
 
@@ -67,12 +67,11 @@ def main():
         color_print(Fore.LIGHTGREEN_EX, "Zapisano nicki do pliku.")
 
     if name == 'nt':
-        print("By zakończyć pracę programu, naciśnij Enter.")
+        print("By zakończyć pracę programu, naciśnij dowolny klawisz.")
         system('pause >nul')
 
 if __name__ == '__main__':
     try:
         main()
     except KeyboardInterrupt:
-        if name == 'nt':
-            system('pause')
+        pass
