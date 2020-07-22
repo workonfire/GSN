@@ -2,13 +2,15 @@ from colorama import init, deinit, Fore
 from os import system, name
 from random import choice, randint
 
-__VERSION__ = '1.0.0'
+__VERSION__ = '1.0.1'
 __AUTHOR__ = 'workonfire'
 
+
 def color_print(color, text):
-    init(autoreset = True)
+    init(autoreset=True)
     print(color + text)
     deinit()
+
 
 def main():
     if name == 'nt':
@@ -29,7 +31,8 @@ def main():
         try:
             how_many_times = int(input("Ilość nicków do wygenerowania: "))
             max_length = int(input("Maksymalna ilość znaków: "))
-            color_print(Fore.RED, "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")
+            color_print(Fore.RED,
+                        "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")
             save_to_file = input("Zapisać wynik do pliku? (y/n) ").lower().rstrip()
             generate_number = input("Doklejać losową liczbę? (y/n) ").lower().rstrip()
             break
@@ -69,6 +72,7 @@ def main():
     if name == 'nt':
         print("By zakończyć pracę programu, naciśnij dowolny klawisz.")
         system('pause >nul')
+
 
 if __name__ == '__main__':
     try:
