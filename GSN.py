@@ -1,8 +1,9 @@
 from colorama import init, deinit, Fore
 from os import system, name
 from random import choice, randint
+from unidecode import unidecode
 
-__VERSION__ = '1.0.1'
+__VERSION__ = '1.0.2'
 __AUTHOR__ = 'workonfire'
 
 
@@ -35,13 +36,14 @@ def main():
                         "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")
             save_to_file = input("Zapisać wynik do pliku? (y/n) ").lower().rstrip()
             generate_number = input("Doklejać losową liczbę? (y/n) ").lower().rstrip()
+            strip_polish_chars = input("Usunąć polskie znaki? (y/n) ").lower().rstrip()
             break
         except ValueError:
             color_print(Fore.RED, "Podaj poprawne wartości.")
 
-    with open("dictionaries/adjectives.txt") as adjectives_file:
+    with open("dictionaries/adjectives.txt", encoding='utf-8') as adjectives_file:
         adjectives = [line.rstrip() for line in adjectives_file.readlines()]
-    with open("dictionaries/nouns.txt") as nouns_file:
+    with open("dictionaries/nouns.txt", encoding='utf-8') as nouns_file:
         nouns = [line.rstrip() for line in nouns_file.readlines()]
 
     generated_nicknames = []
@@ -56,6 +58,8 @@ def main():
             generated_nick += str(randint(1, 100))
         if len(generated_nick) > max_length:
             generated_nick = generated_nick[:max_length]
+        if strip_polish_chars == 'y':
+            generated_nick = unidecode(generated_nick)
         generated_nicknames.append(generated_nick)
 
     for nick in generated_nicknames:
@@ -65,7 +69,7 @@ def main():
 
     if save_to_file == 'y':
         generated_nicknames = "\n".join(generated_nicknames)
-        with open("output.txt", 'a') as log_file:
+        with open("output.txt", 'a', encoding='utf-8') as log_file:
             log_file.write(generated_nicknames)
         color_print(Fore.LIGHTGREEN_EX, "Zapisano nicki do pliku.")
 
