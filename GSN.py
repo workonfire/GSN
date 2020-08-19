@@ -1,7 +1,8 @@
 from colorama import init, deinit, Fore
-from os import system, name
+from os import system
 from random import choice, randint
 from unidecode import unidecode
+import platform
 
 __VERSION__ = '1.0.2'
 __AUTHOR__ = 'workonfire'
@@ -14,7 +15,7 @@ def color_print(color, text):
 
 
 def main():
-    if name == 'nt':
+    if platform.system() == 'Windows':
         system('title GSN')
 
     color_print(Fore.WHITE, "         (        )  ")
@@ -25,8 +26,8 @@ def main():
     color_print(Fore.RED, "(_)) __|/ __| | \\| | ")
     color_print(Fore.RED, "  | (_ |\\__ \\ | .` | ")
     color_print(Fore.RED, "   \\___||___/ |_|\\_| ")
-    print("\nGenerator Spierdolonych Nicków v{}".format(__VERSION__))
-    color_print(Fore.LIGHTYELLOW_EX, "by {}\n".format(__AUTHOR__))
+    print(f"\nGenerator Spierdolonych Nicków v{__VERSION__}")
+    color_print(Fore.LIGHTYELLOW_EX, f"by {__AUTHOR__}\n")
 
     while True:
         try:
@@ -34,9 +35,9 @@ def main():
             max_length = int(input("Maksymalna ilość znaków: "))
             color_print(Fore.RED,
                         "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")
-            save_to_file = input("Zapisać wynik do pliku? (y/n) ").lower().rstrip()
-            generate_number = input("Doklejać losową liczbę? (y/n) ").lower().rstrip()
-            strip_polish_chars = input("Usunąć polskie znaki? (y/n) ").lower().rstrip()
+            save_to_file = input("Zapisać wynik do pliku? (y/n) ").lower().rstrip() == 'y'
+            generate_number = input("Doklejać losową liczbę? (y/n) ").lower().rstrip() == 'y'
+            strip_polish_chars = input("Usunąć polskie znaki? (y/n) ").lower().rstrip() == 'y'
             break
         except ValueError:
             color_print(Fore.RED, "Podaj poprawne wartości.")
@@ -52,13 +53,13 @@ def main():
     for i in range(how_many_times):
         adjective = choice(adjectives)
         noun = choice(nouns)
-        noun = '_' + noun if choice(['underline', 'capitalize']) == 'underline' else noun.title()
+        noun = '_' + noun if choice([True, False]) else noun.title()
         generated_nick = adjective + noun
-        if generate_number == 'y':
+        if generate_number:
             generated_nick += str(randint(1, 100))
         if len(generated_nick) > max_length:
             generated_nick = generated_nick[:max_length]
-        if strip_polish_chars == 'y':
+        if strip_polish_chars:
             generated_nick = unidecode(generated_nick)
         generated_nicknames.append(generated_nick)
 
@@ -67,13 +68,13 @@ def main():
 
     color_print(Fore.LIGHTGREEN_EX, "\nGotowe.")
 
-    if save_to_file == 'y':
+    if save_to_file:
         generated_nicknames = "\n".join(generated_nicknames)
         with open("output.txt", 'a', encoding='utf-8') as log_file:
             log_file.write(generated_nicknames)
         color_print(Fore.LIGHTGREEN_EX, "Zapisano nicki do pliku.")
 
-    if name == 'nt':
+    if platform.system() == 'Windows':
         print("By zakończyć pracę programu, naciśnij dowolny klawisz.")
         system('pause >nul')
 
