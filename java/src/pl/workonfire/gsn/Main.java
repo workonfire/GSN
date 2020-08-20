@@ -29,7 +29,7 @@ public class Main {
         Util.colorPrint(false, WHITE, "         (        )  ");
         Util.colorPrint(true, YELLOW, " (       )\\ )  ( /(  ");
         Util.colorPrint(false, YELLOW, " )\\ )   (()/(  )\\()) ");
-        Util.colorPrint(false, RED, "(()/(    /(_))((_)\\  ");
+        Util.colorPrint(true, RED, "(()/(    /(_))((_)\\  ");
         Util.colorPrint(false, RED, " /(_))_ (_))   _((_) ");
         Util.colorPrint(false, RED, "(_)) __|/ __| | \\| | ");
         Util.colorPrint(false, RED, "  | (_ |\\__ \\ | .` | ");
