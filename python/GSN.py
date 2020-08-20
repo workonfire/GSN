@@ -32,6 +32,14 @@ def main():
     while True:
         try:
             how_many_times = int(input("Ilość nicków do wygenerowania: "))
+
+            if how_many_times == 69:
+                color_print(Fore.LIGHTRED_EX, "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄")
+                color_print(Fore.LIGHTYELLOW_EX, "██ ███ █▄▄ ██▄██ ██ █ ▄▀▄ ██")
+                color_print(Fore.LIGHTGREEN_EX, "██ █ █ █▀▄███ ▄█ ██ █ █▄█ ██")
+                color_print(Fore.LIGHTBLUE_EX, "██▄▀▄▀▄█▄▄▄█▄▄▄██▄▄▄█▄███▄██")
+                color_print(Fore.LIGHTMAGENTA_EX, "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀")
+
             max_length = int(input("Maksymalna ilość znaków: "))
             color_print(Fore.RED,
                         "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit znaków, zostaną one przycięte.")

@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.*;
 
 import static org.fusesource.jansi.Ansi.Color.*;
+import static pl.workonfire.gsn.Util.colorPrint;
 
 public class Main {
     private static final String VERSION = "1.0.2";
@@ -26,26 +27,34 @@ public class Main {
         List<String> adjectives = new ArrayList<>();
         List<String> nouns = new ArrayList<>();
 
-        Util.colorPrint(false, WHITE, "         (        )  ");
-        Util.colorPrint(true, YELLOW, " (       )\\ )  ( /(  ");
-        Util.colorPrint(false, YELLOW, " )\\ )   (()/(  )\\()) ");
-        Util.colorPrint(true, RED, "(()/(    /(_))((_)\\  ");
-        Util.colorPrint(false, RED, " /(_))_ (_))   _((_) ");
-        Util.colorPrint(false, RED, "(_)) __|/ __| | \\| | ");
-        Util.colorPrint(false, RED, "  | (_ |\\__ \\ | .` | ");
-        Util.colorPrint(false, RED, "   \\___||___/ |_|\\_| ");
+        colorPrint(false, WHITE, "         (        )  ");
+        colorPrint(true, YELLOW, " (       )\\ )  ( /(  ");
+        colorPrint(false, YELLOW, " )\\ )   (()/(  )\\()) ");
+        colorPrint(true, RED, "(()/(    /(_))((_)\\  ");
+        colorPrint(false, RED, " /(_))_ (_))   _((_) ");
+        colorPrint(false, RED, "(_)) __|/ __| | \\| | ");
+        colorPrint(false, RED, "  | (_ |\\__ \\ | .` | ");
+        colorPrint(false, RED, "   \\___||___/ |_|\\_| ");
 
         System.out.println("\nGenerator Spierdolonych Nicków v" + VERSION);
-        Util.colorPrint(true, YELLOW, "by " + AUTHOR + "\n");
+        colorPrint(true, YELLOW, "by " + AUTHOR + "\n");
 
         while (true) {
             try {
                 System.out.print("Ilość nicków do wygenerowania: ");
                 howManyTimes = new Scanner(System.in).nextInt();
 
+                if (howManyTimes == 69) {
+                    colorPrint(true, RED, "▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄");
+                    colorPrint(true, YELLOW, "██ ███ █▄▄ ██▄██ ██ █ ▄▀▄ ██");
+                    colorPrint(true, GREEN, "██ █ █ █▀▄███ ▄█ ██ █ █▄█ ██");
+                    colorPrint(true, BLUE, "██▄▀▄▀▄█▄▄▄█▄▄▄██▄▄▄█▄███▄██");
+                    colorPrint(true, MAGENTA, "▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀");
+                }
+
                 System.out.print("Maksymalna ilość znaków: ");
                 maxLength = new Scanner(System.in).nextInt();
-                Util.colorPrint(false, RED, "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit " +
+                colorPrint(false, RED, "UWAGA: Jeśli jakieś nicki będą przekraczały ustalony limit " +
                         "znaków, zostaną one przycięte.");
 
                 System.out.print("Zapisać wynik do pliku? (y/n) ");
@@ -60,7 +69,7 @@ public class Main {
                 break;
             }
             catch (InputMismatchException exception) {
-                Util.colorPrint(false, RED, "Podaj poprawne wartości.");
+                colorPrint(false, RED, "Podaj poprawne wartości.");
             }
         }
 
@@ -69,7 +78,7 @@ public class Main {
             nouns = Util.getLines(new File("dictionaries/nouns.txt"));
         }
         catch (IOException exception) {
-            Util.colorPrint(false, RED, "Wystąpił problem podczas próby otworzenia słowników.");
+            colorPrint(false, RED, "Wystąpił problem podczas próby otworzenia słowników.");
             System.exit(1);
         }
 
@@ -93,9 +102,9 @@ public class Main {
             generatedNicknames.add(generatedNick.replaceAll("\\s+", ""));
         }
 
-        for (String nick : generatedNicknames) Util.colorPrint(true, CYAN, ">> " +  nick);
+        for (String nick : generatedNicknames) colorPrint(true, CYAN, ">> " +  nick);
 
-        Util.colorPrint(false, GREEN, "\nGotowe.");
+        colorPrint(false, GREEN, "\nGotowe.");
 
         if (saveToFile) {
             File outputFile = new File("output.txt");
@@ -104,10 +113,10 @@ public class Main {
                 FileWriter fileWriter = new FileWriter(outputFile, true);
                 fileWriter.write(String.join("\n", generatedNicknames));
                 fileWriter.close();
-                Util.colorPrint(false, GREEN, "Zapisano nicki do pliku.");
+                colorPrint(false, GREEN, "Zapisano nicki do pliku.");
             }
             catch (IOException exception) {
-                Util.colorPrint(false, RED, "Wystąpił problem podczas zapisywania pliku.");
+                colorPrint(false, RED, "Wystąpił problem podczas zapisywania pliku.");
             }
         }
 
