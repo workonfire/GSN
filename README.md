@@ -15,4 +15,11 @@ Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czeka
 
 [ZADZWOŃ TERAZ](https://ujeb.se/wziumownica)
 
-![Zrzut ekranu](https://i.imgur.com/DitCN6E.png)
+![Zrzut ekranu](https://i.imgur.com/NGdWUBF.png)
+
+## Implementacje
+- Python | [workonfire/GSN/python](https://github.com/workonfire/GSN/tree/master/python)
+- Java | [workonfire/GSN/java](https://github.com/workonfire/GSN/tree/master/java)
+- Bash | [oliwier975PL/GSN-Bash](https://github.com/oliwier975PL/GSN-Bash)
+- Batch | [Xiboon/GSN-Batch](https://github.com/Xiboon/GSN-Batch)
+- JavaScript | [Xiboon/Xenith](https://github.com/Xiboon/Xenith/blob/master/commands/gsn.js)
