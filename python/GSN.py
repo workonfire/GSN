@@ -1,8 +1,8 @@
 from colorama import init, deinit, Fore
-from os import system
 from random import choice, randint
 from unidecode import unidecode
 import platform
+import os
 
 __VERSION__ = '1.0.2'
 __AUTHOR__ = 'workonfire'
@@ -16,7 +16,7 @@ def color_print(color, text):
 
 def main():
     if platform.system() == 'Windows':
-        system('title GSN')
+        os.system('title GSN')
 
     color_print(Fore.WHITE, "         (        )  ")
     color_print(Fore.LIGHTYELLOW_EX, " (       )\\ )  ( /(  ")
@@ -28,6 +28,17 @@ def main():
     color_print(Fore.RED, "   \\___||___/ |_|\\_| ")
     print(f"\nGenerator Spierdolonych Nicków v{__VERSION__}")
     color_print(Fore.LIGHTYELLOW_EX, f"by {__AUTHOR__}\n")
+
+    adjectives_path = "dictionaries/adjectives.txt"
+    nouns_path = "dictionaries/nouns.txt"
+
+    if platform.system() == 'Linux':
+        if os.path.isdir('/opt/gsn'):
+            adjectives_path = "/opt/gsn/dictionaries/adjectives.txt"
+            nouns_path = "opt/gsn/dictionaries/nouns.txt"
+
+    output_file = os.path.dirname(os.path.abspath(__file__))
+    output_file += '\\output.txt' if platform.system() == 'Windows' else '/output.txt'
 
     while True:
         try:
@@ -50,9 +61,9 @@ def main():
         except ValueError:
             color_print(Fore.RED, "Podaj poprawne wartości.")
 
-    with open("dictionaries/adjectives.txt", encoding='utf-8') as adjectives_file:
+    with open(adjectives_path, encoding='utf-8') as adjectives_file:
         adjectives = [line.rstrip() for line in adjectives_file.readlines()]
-    with open("dictionaries/nouns.txt", encoding='utf-8') as nouns_file:
+    with open(nouns_path, encoding='utf-8') as nouns_file:
         nouns = [line.rstrip() for line in nouns_file.readlines()]
 
     generated_nicknames = []
@@ -78,13 +89,13 @@ def main():
 
     if save_to_file:
         generated_nicknames = "\n".join(generated_nicknames)
-        with open("output.txt", 'a', encoding='utf-8') as log_file:
+        with open(output_file, 'a', encoding='utf-8') as log_file:
             log_file.write(generated_nicknames)
         color_print(Fore.LIGHTGREEN_EX, "Zapisano nicki do pliku.")
 
     if platform.system() == 'Windows':
         print("By zakończyć pracę programu, naciśnij dowolny klawisz.")
-        system('pause >nul')
+        os.system('pause >nul')
 
 
 if __name__ == '__main__':
