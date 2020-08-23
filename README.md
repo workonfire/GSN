@@ -27,3 +27,8 @@ Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czeka
 [<img src="https://i.imgur.com/uv4V4fj.png" alt="drawing" width="25" height="20" />](https://i.imgur.com/uv4V4fj.png) Batch - [Xiboon/GSN-Batch](https://github.com/Xiboon/GSN-Batch)
 
 [<img src="https://i.imgur.com/D7s80su.png" alt="drawing" width="20" height="20" />](https://i.imgur.com/D7s80su.png) JavaScript - [Xiboon/Xenith](https://github.com/Xiboon/Xenith/blob/master/commands/gsn.js)
+
+## PKGBUILDy
+GSN - [oliwier975PL/PKGBUILDs/gsn](https://github.com/oliwier975PL/PKGBUILDs/tree/master/gsn)
+
+GSN-Bash - [oliwier975PL/PKGBUILDs/gsn-bash](https://github.com/oliwier975PL/PKGBUILDs/tree/master/gsn-bash)
