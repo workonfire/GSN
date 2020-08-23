@@ -35,7 +35,7 @@ def main():
     if platform.system() == 'Linux':
         if os.path.isdir('/opt/gsn'):
             adjectives_path = "/opt/gsn/dictionaries/adjectives.txt"
-            nouns_path = "opt/gsn/dictionaries/nouns.txt"
+            nouns_path = "/opt/gsn/dictionaries/nouns.txt"
 
     output_file = os.path.dirname(os.path.abspath(__file__))
     output_file += '\\output.txt' if platform.system() == 'Windows' else '/output.txt'
