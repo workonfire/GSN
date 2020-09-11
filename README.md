@@ -29,7 +29,7 @@ Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czeka
 
  [<img src="https://i.imgur.com/D7s80su.png" alt="drawing" width="20" height="20" />](https://i.imgur.com/D7s80su.png)  JavaScript - [Xiboon/Xenith](https://github.com/Xiboon/Xenith/blob/master/commands/gsn.js)
 
- [<img src="https://golang.org/lib/godoc/images/go-logo-blue.svg" alt="drawing" width="20" height="20" />](https://golang.org/lib/godoc/images/go-logo-blue.svg)  Golang - [Xiboon/GSN-golang](https://github.com/Xiboon/gsn-golang)
+ [<img src="https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg" alt="drawing" width="20" height="20" />](https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg)  Golang - [Xiboon/GSN-golang](https://github.com/Xiboon/gsn-golang)
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="drawing" width="20" height="20" />](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png)  Web (html, css i js - [Xiboon/GSN-web](https://github.com/Xiboon/gsn-web)
 
