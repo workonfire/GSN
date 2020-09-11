@@ -19,19 +19,19 @@ Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czeka
 
 ## Implementacje
 
-[<img src="https://i.imgur.com/Z4gZ4gl.png" alt="drawing" width="20" height="20" />](https://i.imgur.com/Z4gZ4gl.png)  Python - [workonfire/GSN/python](https://github.com/workonfire/GSN/tree/master/python)
+[<img src="https://i.imgur.com/Z4gZ4gl.png" width="20" height="20" />](https://i.imgur.com/Z4gZ4gl.png) Python - [workonfire/GSN/python](https://github.com/workonfire/GSN/tree/master/python)
 
-[<img src="https://i.imgur.com/f0aaknU.png" alt="drawing" width="15" height="20" />](https://i.imgur.com/f0aaknU.png) Java - [workonfire/GSN/java](https://github.com/workonfire/GSN/tree/master/java)
+[<img src="https://i.imgur.com/f0aaknU.png" width="15" height="20" />](https://i.imgur.com/f0aaknU.png) Java - [workonfire/GSN/java](https://github.com/workonfire/GSN/tree/master/java)
 
-[<img src="https://i.imgur.com/ISOIPos.png" alt="drawing" width="20" height="20" />](https://i.imgur.com/ISOIPos.png)  Bash - [oliwier975PL/GSN-Bash](https://github.com/oliwier975PL/GSN-Bash)
+[<img src="https://i.imgur.com/ISOIPos.png" width="20" height="20" />](https://i.imgur.com/ISOIPos.png) Bash - [oliwier975PL/GSN-Bash](https://github.com/oliwier975PL/GSN-Bash)
 
- [<img src="https://i.imgur.com/uv4V4fj.png" alt="drawing" width="25" height="20" />](https://i.imgur.com/uv4V4fj.png) Batch - [Xiboon/GSN-Batch](https://github.com/Xiboon/GSN-Batch)
+ [<img src="https://i.imgur.com/uv4V4fj.png" width="25" height="20" />](https://i.imgur.com/uv4V4fj.png) Batch - [Xiboon/GSN-Batch](https://github.com/Xiboon/GSN-Batch)
 
- [<img src="https://i.imgur.com/D7s80su.png" alt="drawing" width="20" height="20" />](https://i.imgur.com/D7s80su.png)  JavaScript - [Xiboon/Xenith](https://github.com/Xiboon/Xenith/blob/master/commands/gsn.js)
+ [<img src="https://i.imgur.com/D7s80su.png" width="20" height="20" />](https://i.imgur.com/D7s80su.png) JavaScript - [Xiboon/Xenith](https://github.com/Xiboon/Xenith/blob/master/commands/gsn.js)
 
- [<img src="https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg" alt="drawing" width="20" height="20" />](https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg)  Golang - [Xiboon/GSN-golang](https://github.com/Xiboon/gsn-golang)
+ [<img src="https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg" width="20" height="20" />](https://secure.meetupstatic.com/photos/event/5/4/8/a/600_331101642.jpeg) Go - [Xiboon/GSN-golang](https://github.com/Xiboon/gsn-golang)
 
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="drawing" width="20" height="20" />](https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png)  Web (html, css i js - [Xiboon/GSN-web](https://github.com/Xiboon/gsn-web)
+[<img src="https://i.imgur.com/I8eDmlc.png" width="20" height="20" />](https://i.imgur.com/I8eDmlc.png) Web - [Xiboon/GSN-web](https://github.com/Xiboon/gsn-web)
 
 ## PKGBUILDy
 GSN - [oliwier975PL/PKGBUILDs/gsn](https://github.com/oliwier975PL/PKGBUILDs/tree/master/gsn)
