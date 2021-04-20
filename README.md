@@ -21,7 +21,9 @@ Wypróbuj **już dziś**, CAŁKOWICIE ZA DARMO! Natychmiast! Na co jeszcze czeka
 
 [<img src="https://i.imgur.com/Z4gZ4gl.png" width="20" height="20" />](https://i.imgur.com/Z4gZ4gl.png) Python - [workonfire/GSN/python](https://github.com/workonfire/GSN/tree/master/python)
 
-[<img src="https://i.imgur.com/f0aaknU.png" width="15" height="20" />](https://i.imgur.com/f0aaknU.png) Java - [workonfire/GSN/java](https://github.com/workonfire/GSN/tree/master/java)
+[<img src="https://i.imgur.com/f0aaknU.png" width="15" height="20" />](https://i.imgur.com/f0aaknU.png) Java - [workonfire/GSN/java](https://github.com/workonfire/GSN/tree/60daa4bba39507f6151b9fa1618d34956c5625d7)
+
+[<img src="https://i.imgur.com/UCVoJLu.png" height="20" />](https://i.imgur.com/f0aaknU.png) Kotlin - [workonfire/GSN/kotlin](https://github.com/workonfire/GSN/tree/master/kotlin)
 
 [<img src="https://i.imgur.com/ISOIPos.png" width="20" height="20" />](https://i.imgur.com/ISOIPos.png) Bash - [oliwier975PL/GSN-Bash](https://github.com/oliwier975PL/GSN-Bash)
 
